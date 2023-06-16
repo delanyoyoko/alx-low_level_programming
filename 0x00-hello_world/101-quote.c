@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-const char v[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+char v[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 write(2, v, sizeof(v) - 1);
 return (1);
 }
