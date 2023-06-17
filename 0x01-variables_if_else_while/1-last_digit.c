@@ -3,7 +3,11 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int n;
@@ -13,11 +17,7 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 last = n % 10;
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+/* your code goes there */
 if (last == 0)
 {
 printf("Last digit of %d is %d and is 0\n", n, last);
