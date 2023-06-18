@@ -7,14 +7,16 @@
  */
 int main(void)
 {
-char letter;
+char digit;
 
-for (letter = 'a'; letter <= 'z'; letter++)
+for (digit = '0'; digit <= '9'; digit++)
 {
-if (letter != 'q' && letter != 'e')
-{
-putchar(letter);
+putchar(digit);
 }
+
+for (digit = 'a'; digit <= 'f'; digit++)
+{
+putchar(digit);
 }
 
 putchar('\n');
