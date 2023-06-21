@@ -1,7 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+
+int print_alpha_x10(void)
+{
+char letter = 'a';
+
+for (int i = 0; i < 10; i++)
+{
+for (int j = 0; j < 26; j++)
+{
+putchar(letter);
+letter++;
+}
+letter = 'a';
+}
+
+putchar('\n');
+return (0);
+}
 
 /**
  * main - Entry point
@@ -10,23 +25,6 @@
  */
 int main(void)
 {
-int n;
-
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-
-/* your code goes there */
-if (n > 0)
-{
-printf("%d is positive\n", n);
-}
-else if (n < 0)
-{
-printf("%d is negative\n", n);
-}
-else
-{
-printf("%d is zero\n", n);
-}
+print_alpha_x10();
 return (0);
 }
