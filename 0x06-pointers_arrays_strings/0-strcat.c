@@ -7,12 +7,11 @@
  */
 int main(void)
 {
-char c;
+char str1[50] = "Hello, ";
+char str2[] = "world!";
 
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
-
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
-return (0);
+printf("Before concatenation: %s\n", str1);
+_strcat(str1, str2);
+printf("After concatenation: %s\n", str1);
+return 0;
 }
