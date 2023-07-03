@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * simple_print_buffer - prints buffer in hexa
@@ -26,12 +27,10 @@ return s;
  */
 int main(void)
 {
-char c;
+char buffer[10];
+char constant = 'A';
 
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
-
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
-return (0);
+_memset(buffer, constant, sizeof(buffer));
+printf("Buffer: %s\n", buffer);
+return 0;
 }
