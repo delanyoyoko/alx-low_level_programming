@@ -7,14 +7,16 @@
  *
  * Return: Nothing.
  */
-char* _memset(char* s, char b, unsigned int n) {
-    char* p = s; // Assign the pointer s to p
+char* _memset(char* s, char b, unsigned int n)
+{
+char* p = s;
 
-    for (unsigned int i = 0; i < n; i++) {
-        p[i] = b; // Assign the constant byte b to each element of the memory area
-    }
+for (unsigned int i = 0; i < n; i++)
+{
+p[i] = b;
+}
 
-    return s; // Return a pointer to the memory area
+return s;
 }
 
 /**
