@@ -20,6 +20,6 @@ sum2 += a[i * size + (size - 1 - i)];
 i++;
 }
 
-printf("%d\n", sum1);
-printf("%d\n", sum2);
+printf("%d, ", sum1);
+printf("%d, ", sum2);
 }
