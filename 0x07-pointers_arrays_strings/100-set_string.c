@@ -14,12 +14,6 @@ void set_string(char **s, char *to)
 size_t len = strlen(to) + 1;
 char *temp = realloc(*s, len);
 
-if (temp == NULL)
-{
-printf("Memory allocation failed.\n");
-return;
-}
-
 *s = temp;
 strcpy(*s, to);
 }
