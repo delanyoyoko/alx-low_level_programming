@@ -6,7 +6,7 @@
  * @s: string to search.
  * @accept: the predicate.
  *
- * Return: Pointer to the byte in s matches one of the bytes in accept
+ * Return: Pointer to the byte in s that matches one of the bytes in accept
  */
 char *_strpbrk(char *s, char *accept)
 {
