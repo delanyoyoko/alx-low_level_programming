@@ -1,10 +1,20 @@
-unsigned int _strspn(char* s, char* accept) {
-    unsigned int length = 0;  // Initialize the length counter
+#include <stddef.h>
 
-    while (*s != '\0' && strchr(accept, *s) != NULL) {
-        length++;  // Increment the length counter
-        s++;  // Move to the next character in the string
-    }
+/**
+ * _strspn - gets the length of a prefix substring
+ * @s: the string
+ * @accept: the predicate to accept
+ *
+ * Return: The number of bytes in the initial segment of s.
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int length = 0;
 
-    return length;  // Return the number of bytes in the initial segment of s
+while (*s != '\0' && strchr(accept, *s) != NULL)
+{
+length++;
+s++;
+}
+return (length);
 }
