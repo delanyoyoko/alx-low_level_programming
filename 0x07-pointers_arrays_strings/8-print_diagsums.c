@@ -6,7 +6,6 @@
  * @a: a pointer to the first element of the matrix
  * @size: the size of the matrix
  *
- * Return: Always 0.
  */
 void print_diagsums(int *a, int size)
 {
