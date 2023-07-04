@@ -1,18 +1,23 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _memcpy - copies memory area
+ * @dest: the destination array
+ * @src: the source array
+ * @n: the given length
  *
- * Return: Always 0 (Success)
+ * Return: A pointer to dest.
  */
-int main(void)
+char *_memcpy(char* dest, char* src, unsigned int n)
 {
-char c;
+char *p_dest = dest;
+char *p_src = src;
+unsigned int i = 0;
 
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
-
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
-return (0);
+while (i < n)
+{
+p_dest[i] = p_src[i];
+i++;
+}
+return (dest);
 }
