@@ -1,18 +1,21 @@
-#include "main.h"
+#include <stddef.h>
 
 /**
- * main - Entry point
+ * _strpbrk - searches a string for any of a set of bytes
+ * @s: string to search.
+ * @accept: the predicate.
  *
- * Return: Always 0 (Success)
+ * Return: A pointer to the byte in s that matches one of the bytes in accept, or NULL
  */
-int main(void)
+char *_strpbrk(char *s, char *accept)
 {
-char c;
-
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
-
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
-return (0);
+while (*s != '\0')
+{
+if (strchr(accept, *s) != NULL)
+{
+return (s);
+}
+s++;
+}
+return (NULL);
 }
