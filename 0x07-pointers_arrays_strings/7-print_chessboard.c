@@ -1,18 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_chessboard - prints a chessboard
+ * @a: array of characters.
  */
-int main(void)
+void print_chessboard(char (*a)[8])
 {
-char c;
+int i = 0;
 
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
+while (i < 8)
+{
+int j = 0;
 
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
-return (0);
+while (j < 8)
+{
+printf("%c ", a[i][j]);
+j++;
+}
+printf("\n");
+i++;
+}
 }
