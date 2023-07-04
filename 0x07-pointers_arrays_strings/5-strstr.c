@@ -1,18 +1,30 @@
-#include "main.h"
+#include <stddef.h>
 
 /**
- * main - Entry point
+ * _strstr - locates a substring
+ * @haystack: the string.
+ * @needle: the substring.
  *
- * Return: Always 0 (Success)
+ * Return: A pointer to the beginning of the located substring, or NULL
  */
-int main(void)
+char *_strstr(char *haystack, char *needle)
 {
-char c;
+while (*haystack != '\0')
+{
+char *h = haystack;
+char *n = needle;
 
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
+while (*n != '\0' && *h == *n)
+{
+h++;
+n++;
+}
 
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
-return (0);
+if (*n == '\0')
+{
+return (haystack);
+}
+haystack++;
+}
+return (NULL);
 }
