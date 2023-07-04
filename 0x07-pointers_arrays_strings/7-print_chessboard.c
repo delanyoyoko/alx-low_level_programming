@@ -3,6 +3,8 @@
 /**
  * print_chessboard - prints a chessboard
  * @a: array of characters.
+ *
+ * Return: Always 0.
  */
 void print_chessboard(char (*a)[8])
 {
@@ -20,4 +22,5 @@ j++;
 printf("\n");
 i++;
 }
+return (0)
 }
