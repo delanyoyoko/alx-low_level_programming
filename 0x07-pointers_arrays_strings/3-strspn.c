@@ -1,18 +1,10 @@
-#include "main.h"
+unsigned int _strspn(char* s, char* accept) {
+    unsigned int length = 0;  // Initialize the length counter
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-char c;
+    while (*s != '\0' && strchr(accept, *s) != NULL) {
+        length++;  // Increment the length counter
+        s++;  // Move to the next character in the string
+    }
 
-c = 'A';
-printf("%c: %d\n", c, _isupper(c));
-
-c = 'a';
-printf("%c: %d\n", c, _isupper(c));
-return (0);
+    return length;  // Return the number of bytes in the initial segment of s
 }
