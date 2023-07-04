@@ -3,8 +3,9 @@
 
 /**
  * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * @s: the size of the memory to print
+ * @b: the address of memory to print
+ * @n: the given length
  *
  * Return: Nothing.
  */
