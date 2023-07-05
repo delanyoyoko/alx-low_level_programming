@@ -27,7 +27,7 @@ return (0);
  *
  * Return: Natural square root of a number or Error
  */
-int _sqrt_recursion_helper(int n, int start, int end)
+unsigned int _sqrt_recursion_helper(unsigned int, unsigned int, unsigned int)
 {
 int mid;
 int square;
