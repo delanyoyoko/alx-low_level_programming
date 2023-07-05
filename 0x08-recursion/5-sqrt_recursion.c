@@ -1,4 +1,25 @@
 /**
+ * _multiply - performs multiplication of two numbers
+ * @a: an integer
+ * @b: an integer
+ *
+ * Return: A product
+ */
+int _multiply(int a, int b)
+{
+if (a < b)
+{
+return (_multiply(b, a));
+}
+
+if (b != 0)
+{
+return (a + _multiply(a, b -1));
+}
+return (0);
+}
+
+/**
  * _sqrt_recursion_helper - performs the actual recursive calculation
  * @n: an integer
  * @start: the start index
@@ -17,7 +38,7 @@ return (-1);
 }
 
 mid = (start + end) / 2;
-square = mid * mid;
+square = _multiply(mid, mid)
 
 if (square == n)
 {
