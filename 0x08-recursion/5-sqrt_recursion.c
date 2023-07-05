@@ -7,14 +7,14 @@
  * Return: Natural square root of a number or Error
  */
 int _sqrt_recursion_helper(int n, int start, int end)
+int _mid = (start + end) / 2;
+int square = _mid * _mid;
+
 {
 if (start > end)
 {
 return (-1);
 }
-
-int _mid = (start + end) / 2;
-int square = _mid * _mid;
 
 if (square == n)
 {
