@@ -13,19 +13,19 @@ if (start > end)
 return (-1);
 }
 
-int mid = (start + end) / 2;
-int square = mid * mid;
+int _mid = (start + end) / 2;
+int square = _mid * _mid;
 
 if (square == n)
 {
-return (mid);
+return (_mid);
 }
 
 if (square < n)
 {
-return (_sqrt_recursion_helper(n, mid + 1, end));
+return (_sqrt_recursion_helper(n, _mid + 1, end));
 }
-return (_sqrt_recursion_helper(n, start, mid - 1));
+return (_sqrt_recursion_helper(n, start, _mid - 1));
 }
 
 /**
