@@ -7,16 +7,7 @@
  */
 int _multiply(int a, int b)
 {
-if (a < b)
-{
-return (_multiply(b, a));
-}
-
-if (b != 0)
-{
-return (a + _multiply(a, b - 1));
-}
-return (0);
+return (a * b);
 }
 
 /**
