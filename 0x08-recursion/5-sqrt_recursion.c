@@ -38,7 +38,7 @@ return (-1);
 }
 
 mid = (start + end) / 2;
-square = _multiply(mid, mid)
+square = _multiply(mid, mid);
 
 if (square == n)
 {
