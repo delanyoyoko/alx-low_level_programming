@@ -25,7 +25,7 @@ return (is_palindrome_helper(s, start + 1, end - 1));
 }
 
 /**
- * is_prime_number_helper - determines whether a string is
+ * is_palindrome - determines whether a string is
  * a palindrome
  * @s: the string
  *
