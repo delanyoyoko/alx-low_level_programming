@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * _pow_recursion - determines the value of x raised to the power of y
  * @x: the base
