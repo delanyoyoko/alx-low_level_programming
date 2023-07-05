@@ -7,8 +7,8 @@
  * Return: Natural square root of a number or Error
  */
 int _sqrt_recursion_helper(int n, int start, int end)
-int _mid = (start + end) / 2;
-int square = _mid * _mid;
+int mid;
+int square;
 
 {
 if (start > end)
@@ -16,16 +16,19 @@ if (start > end)
 return (-1);
 }
 
+mid = (start + end) / 2;
+square = mid * mid;
+
 if (square == n)
 {
-return (_mid);
+return (mid);
 }
 
 if (square < n)
 {
-return (_sqrt_recursion_helper(n, _mid + 1, end));
+return (_sqrt_recursion_helper(n, mid + 1, end));
 }
-return (_sqrt_recursion_helper(n, start, _mid - 1));
+return (_sqrt_recursion_helper(n, start, mid - 1));
 }
 
 /**
