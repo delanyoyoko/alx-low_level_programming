@@ -36,4 +36,3 @@ printf("%d\n", result);
 
 return 0;
 }
-atoi(argv[1])
