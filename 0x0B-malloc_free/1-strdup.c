@@ -1,5 +1,14 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
+
+/**
+ * _strdup - make a pointer to a newly allocated
+ * space in memory
+ * @str: the input string
+ *
+ * Return: A pointer to a newly allocated space in memory.
+ */
 
 char *_strdup(char *str)
 {
