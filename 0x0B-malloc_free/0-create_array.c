@@ -24,12 +24,12 @@ if (array == NULL)
 return (NULL);
 }
 
-i = 0
+i = 0;
 
 while (i < size)
 {
 array[i] = c;
-i++
+i++;
 }
 
 return (array);
