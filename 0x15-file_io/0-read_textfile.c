@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buff_mode = malloc(sizeof(char) * letters);
 	text_mode = read(file_desc, buff_mode, letters);
 	write_mode = write(STDOUT_FILENO, buff_mode, text_mode);
-
+	
 	free(buff_mode);
 	close(file_desc);
 	return (write_mode);
