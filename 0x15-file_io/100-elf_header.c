@@ -114,7 +114,7 @@ void print_data_type(unsigned char *ei_identity)
 /**
  * print_version_number - Prints an ELF header file version number.
  * @ei_identity: A pointer to an array containing the ELF version number.
- *    
+ *
  */
 void print_version_number(unsigned char *ei_identity)
 {
@@ -179,7 +179,8 @@ void print_os_abii(unsigned char *ei_identity)
 
 /**
  * print_abii - Prints the ABI version of an ELF header file.
- * @ei_identity: A pointer to an array that contains the ELF ABI version number.
+ * @ei_identity: A pointer to an array that contains the ELF ABI
+ * version number.
  */
 void print_abii(unsigned char *ei_identity)
 {
